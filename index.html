@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Veo 3 Prompt Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Veo 3 Consistent Character Prompt Generator by mbahkakung</h1>
+        <p>Isi kolom di bawah ini untuk menghasilkan prompt yang terstruktur untuk Veo 3.</p>
+
+        <div class="form-container">
+            <div class="form-column">
+                <label for="judul_scane">1. Judul Scane</label>
+                <input type="text" id="judul_scane" placeholder="Contoh: Terminal bus malam">
+
+                <label for="deskripsi_karakter">2. Deskripsi Karakter Inti</label>
+                <textarea id="deskripsi_karakter" rows="8" placeholder="Contoh: Seorang vlogger wanita muda asal Minang berusia 27 tahun. Perawakan/Bentuk Tubuh: tubuh mungil, tinggi 158cm..."></textarea>
+
+                <label for="suara_karakter">3. Detail Suara Karakter</label>
+                <textarea id="suara_karakter" rows="6" placeholder="Contoh: Dia berbicara dengan suara wanita muda yang hangat dan penuh semangat. Nada: mezzo-soprano..."></textarea>
+
+                <label for="aksi_karakter">4. Aksi Karakter</label>
+                <input type="text" id="aksi_karakter" placeholder="Contoh: berjalan di sekitar terminal bus malam...">
+
+                <label for="ekspresi_karakter">5. Ekspresi Karakter</label>
+                <input type="text" id="ekspresi_karakter" placeholder="Contoh: Karakter menunjukkan ekspresi kagum dan antusias...">
+            </div>
+
+            <div class="form-column">
+                <label for="latar_tempat_waktu">6. Latar Tempat & Waktu</label>
+                <textarea id="latar_tempat_waktu" rows="4" placeholder="Contoh: latar tempat: di terminal bus antar kota malam hari..."></textarea>
+
+                <label for="detail_visual">7. Detail Visual Tambahan</label>
+                <textarea id="detail_visual" rows="4" placeholder="Contoh: Pencahayaan: natural dari lampu jalan... Gaya Video/Art Style: cinematic realistis..."></textarea>
+                
+                <label for="gerakan_kamera">Gerakan Kamera</label>
+                <select id="gerakan_kamera">
+                    <!-- Opsi akan ditambahkan oleh JavaScript -->
+                </select>
+
+                <label for="suasana">8. Suasana Keseluruhan</label>
+                <input type="text" id="suasana" placeholder="Contoh: Suasana sibuk, ramai, dengan kesan perjalanan malam...">
+
+                <label for="suara_lingkungan">9. Suara Lingkungan/Ambience</label>
+                <input type="text" id="suara_lingkungan" placeholder="Contoh: SOUND: suara mesin bus menyala...">
+
+                <label for="dialog_karakter">10. Dialog Karakter (dalam Bahasa Indonesia)</label>
+                <textarea id="dialog_karakter" rows="3" placeholder="Contoh: Karakter berkata: 'Tiap kota punya terminal kayak gini...'"></textarea>
+                
+                <label for="negative_prompt">11. Negative Prompt</label>
+                <input type="text" id="negative_prompt" value="Hindari: teks di layar, subtitle, tulisan di video, font, logo, distorsi, artefak, anomali, wajah ganda, anggota badan cacat, tangan tidak normal, orang tambahan, objek mengganggu, kualitas rendah, buram, glitch, suara robotik, suara pecah.">
+            </div>
+        </div>
+
+        <div class="button-group">
+            <button id="generateBtn">Buat Prompt</button>
+            <button id="resetBtn" type="button">Reset</button>
+        </div>
+
+        <div class="output-container">
+            <div class="output-column">
+                <h2>Prompt Bahasa Indonesia (Dapat Diedit)</h2>
+                <textarea id="output_indonesia" rows="15"></textarea>
+            </div>
+            <div class="output-column">
+                <h2>Final Prompt (Bahasa Inggris)</h2>
+                <textarea id="output_inggris" rows="15" readonly></textarea>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,148 @@
+/* General Body Styling */
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    background-color: #f0f2f5;
+    color: #1c1e21;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+}
+
+/* Main Container */
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: #ffffff;
+    padding: 25px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+    font-size: 28px;
+    color: #1877f2;
+    text-align: center;
+    margin-bottom: 10px;
+}
+
+p {
+    text-align: center;
+    color: #606770;
+    margin-bottom: 30px;
+}
+
+/* Form Layout */
+.form-container {
+    display: flex;
+    gap: 40px;
+    margin-bottom: 30px;
+}
+
+.form-column {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Form Elements Styling */
+label {
+    font-weight: 600;
+    margin-bottom: 8px;
+    color: #333;
+}
+
+input[type="text"],
+textarea,
+select {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #dddfe2;
+    border-radius: 6px;
+    font-size: 16px;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+    transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+input[type="text"]:focus,
+textarea:focus,
+select:focus {
+    border-color: #1877f2;
+    box-shadow: 0 0 0 2px rgba(24, 119, 242, 0.2);
+    outline: none;
+}
+
+textarea {
+    resize: vertical;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    width: 100%;
+    padding: 14px;
+    font-size: 18px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #1877f2;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.2s;
+    margin-bottom: 30px;
+}
+
+button:hover {
+    background-color: #166fe5;
+}
+
+.button-group {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 30px;
+}
+
+.button-group button {
+    margin-bottom: 0;
+}
+
+#resetBtn {
+    background-color: #6c757d;
+}
+
+#resetBtn:hover {
+    background-color: #5a6268;
+}
+
+/* Output Section */
+.output-container {
+    display: flex;
+    gap: 40px;
+}
+
+.output-column {
+    flex: 1;
+}
+
+h2 {
+    font-size: 20px;
+    color: #333;
+    border-bottom: 2px solid #e0e0e0;
+    padding-bottom: 10px;
+    margin-bottom: 15px;
+}
+
+#output_indonesia,
+#output_inggris {
+    width: 100%;
+    box-sizing: border-box;
+    font-family: 'Courier New', Courier, monospace;
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+#output_inggris {
+    background-color: #e9ebee;
+    color: #333;
+} 
